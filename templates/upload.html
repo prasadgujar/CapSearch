@@ -1,0 +1,90 @@
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template 
+    <link rel="stylesheet" type="text/css" href="templates/jumbotron.css"> -->
+     <style>
+       /* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+  background-image: url("/static/blog.jpg")
+  
+}
+.jumbotron{
+  background-image: url("/static/blog.jpg")
+  background-background-repeat: none;
+}
+</style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">CapSearch</a>
+      
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0" action="result" method="POST">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" name="Name">
+          <input type="submit" value="submit">
+        </form>
+      </div>
+    </nav>
+
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">CapSearch</h1>
+          
+        </div>
+      </div>
+
+      <div class="card indigo text-center z-depth-2 light-version py-4 px-5">
+
+            <form class="md-form" method=POST enctype=multipart/form-data action="{{ url_for('upload') }}"">
+              <div class="file-field">
+                <div class="btn btn-outline-white waves-effect btn-sm float-left">
+                  <span>Choose file<i class="fas fa-cloud-upload-alt ml-3" aria-hidden="true"></i></span>
+                  <input type="file" name=photo>
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate text-white" type="submit" placeholder="Upload your file">
+                </div>
+              </div>
+            </form>
+          
+       
+        <hr>
+
+      </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+      <p>&copy; <a href="https://github.com/prasadgujar">Github 2018-19</a></p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/Users/prasadgujar16/Desktop/searching/templates/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  </body>
+</html>

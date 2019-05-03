@@ -1,0 +1,10 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+  padding-top: 3.5rem;
+  background-image: url("/Users/prasadgujar16/Desktop/searching/blog.jpg")
+  
+}
+.jumbotron{
+  background-image: url("/Users/prasadgujar16/Desktop/searching/blog.jpg")
+  background-background-repeat: none;
+}
